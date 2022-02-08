@@ -1,0 +1,30 @@
+### Create Client
+
+POST http://localhost:3000/clients
+Content-Type: application/json
+
+{
+  "username": "Idri",
+  "email": "Idri@gmail.com",
+  "cardNumber": 1
+}
+
+### Create Banker
+
+POST http://localhost:3000/banker
+Content-Type: application/json
+
+{
+  "username": "elon",
+  "email": "elon@gmail.com",
+  "employeeNumber": 1
+}
+
+### Create transaction
+POST http://localhost:3000/clients/1/transcations
+Content-Type: application/json
+
+{
+  "type": "withdraw",
+  "amount": 10
+}
